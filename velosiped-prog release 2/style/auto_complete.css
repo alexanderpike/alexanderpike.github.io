@@ -1,0 +1,41 @@
+.input_out {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+
+.input_block {
+	width: 50%;
+	margin-top: 50px;
+	float: right;
+	background-color: silver;
+	margin: 20px;
+	padding: 30px;
+	width: 400px;
+	height: 250px;
+}
+
+.input_block input {
+	margin: 20px;
+}
+
+.input_block input:first-child {
+	margin-top: 40px;
+}
+
+.out_block {
+	width: 50%;
+	margin-top: 50px;
+	float: right;
+	background-color: white;
+	margin: 20px;
+	padding: 30px;
+	width: 400px;
+	height: 250px;
+
+}
+
+.out_text {
+	line-height: 1.5em;
+}

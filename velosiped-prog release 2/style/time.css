@@ -1,0 +1,11 @@
+#timeout {
+	border: 3px solid #fd2090;
+	padding: 50px 90px 50px 90px;
+	margin: 100px 50px 100px 50px;
+	font-size: 3em;
+	color: #ae22eb;
+	text-shadow: 0 0 10px;
+	background-color: black;
+	border-radius: 2px;
+	box-shadow: 0 0 20px #fd2090;
+}

@@ -1,0 +1,118 @@
+body {
+    background-color: silver;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+/*HEADER*/
+
+.header {
+    position: relative;
+    padding-top: 40px;
+    background-color: #354243;
+    min-height: 70px;
+}
+
+.wrapperImage {
+    position: absolute;
+    left: 20px;
+    top: 18%;
+}
+
+.wrapperImage img {
+    border: 1px solid black;
+    border-radius: 25%;
+    transition: all 0.5s ease;
+}
+
+.header nav {
+    display: flex;
+    justify-content: center;
+    min-height: 30px;
+}
+
+.header nav a {
+    display: block;
+    font-size: 1.2em;
+    color: white;
+    transition: all .5s ease;
+}
+
+.header nav a:not(:last-child) {
+    display: block;
+    margin-right: 50px;
+}
+
+
+/*CONTAINER */
+.main {
+    display: flex;
+    min-height: 100vh;
+}
+
+aside {
+    padding-left: 3%;
+    padding-top: 30px;
+    width: 20%;
+    background-color: #298A96;
+}
+
+aside a {
+    display: block;
+    color: #401aa7;
+    color: black;
+    padding-top: 10px;
+    transition: all 0.3s ease;
+}
+
+aside a:first-child {
+    padding-top: 0;
+}
+
+
+.content {
+    width: 80%;
+    background-color: #9a91ec;
+    text-align: center;
+    padding-top: 20px;
+	background-color: #cabcbc;
+}
+
+aside a:hover {
+	color: white;
+    padding-left: 20px;
+}
+
+nav a:hover {
+	color: #d4c18e;
+    border-bottom: 1px solid white;
+}
+
+.wrapperImage img:hover {
+	transform: rotate(720deg);
+}
+
+.wrapperImage {
+    animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+ 
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+a:focus {
+    outline: 0;
+}

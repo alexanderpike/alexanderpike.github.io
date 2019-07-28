@@ -1,0 +1,27 @@
+article {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin: 10px;
+}
+
+.box {
+	width: 300px;
+	height: 250px;
+	border: 1px solid black;
+	border-radius: 5%;
+	background-color: white;
+	padding: 10px;
+	margin: 10px;
+	transition: all 0.6s ease;
+}
+
+h3 {
+	text-decoration: underline;
+	padding-bottom: 5px;
+}
+
+.box:hover {
+	box-shadow: 0 0 20px green;
+	border: 1px solid green;
+}
