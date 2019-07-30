@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Days+One&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	height: auto;
+	width: 100%;
+}
+
+.logo img {
+	height: 65px;
+	width: 65px;
+	margin: 5px 0px 5px 30px;
+}
+
+.city {
+	font-size: 0.9em;
+	color: silver;
+	margin-right: 30px;
+	font-style: italic;
+	font-family: ubuntu;
+	border-bottom: 1px solid white;
+	padding-bottom: 3px;
+}
+
+.title {
+	color: white;
+	font-size: 2em;
+	font-family: 'Days One', sans-serif;
+	font-weight: 700;
+}
+
+header {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: auto;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #49bf88;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: auto;
+}
+
+.text_info {
+	width: 100%;
+	height: auto;
+	background-color: #bcc4c4;
+	font-size: 1.1em;
+}
+
+.text {
+	display: flex;
+	flex-direction: column;
+	margin: 50px 50px 0px 50px;
+	line-height: 24px;
+}
+
+.title_list {
+	margin-bottom: 10px;
+}
+
+.list {
+	margin: 30px 0px 30px 5%;
+}
