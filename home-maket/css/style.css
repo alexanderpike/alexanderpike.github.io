@@ -74,7 +74,7 @@ header {
 	color: white;
 	font-size: 18px;
 	text-transform: uppercase;
-	background-color: rgba(0,0,0,0)
+	background-color: rgba(0,0,0,0);
 }
 
 .services {
@@ -220,4 +220,107 @@ header {
 	width: 100%;
 	height: auto;
 	margin-top: 69px;
+}
+
+.aboutimgbox figcaption {
+	margin-top: 10px;
+	margin-left: 5px;
+}
+
+.latest_works {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: auto;
+	align-items: center;
+}
+
+.latest {
+	color: #555555;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 24px;
+	text-transform: uppercase;
+	margin-top: 99px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid silver;
+}
+
+.navigation_latest a {
+	text-decoration: none;
+	color: #555555;
+	margin-top: 50px;
+	margin-bottom: 69px;
+}
+
+.navigation_latest a:first-child {
+	color: orange;
+}
+
+.navigation_latest {
+	display: flex;
+	height: auto;
+	width: 500px;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.latest_img {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: auto;
+	align-items: center;
+}
+
+.latest_img1,
+.latest_img2,
+.latest_img3 {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: auto;
+	justify-content: center;
+}
+
+.latest_img1 img,
+.latest_img2 img,
+.latest_img3 img {
+	margin: 20px;
+	border: 1px solid silver;
+	border-radius: 6px;
+}
+
+.do_you {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	height: 369px;
+	background-image: url(../img/paralax.png);
+}
+
+.do_you_text {
+	color: #ffffff;
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 44px;
+	width: 510px;
+	margin-top: 99px;
+}
+
+.btn_you {
+	margin-top: 70px;
+}
+
+.btn_you input {
+	color: #ffffff;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 44px;
+	text-transform: uppercase;
+	background-color: rgba(0,0,0,0);
+	border: 2px solid white;
+	padding-right: 20px;
+	padding-left: 20px;
 }
