@@ -38,17 +38,103 @@
 					</div>
 				</div>
 			</div>
+			<div class="sliders">
+				<span class="arrow_prew" id="prew"><<<</span>
+				<ul id="slider">
+		   			<li class="slide active">
+			      	<img src="img/1.jpg">
+				   	</li>
 
-			<div class="slider">
-				a
+				    <li class="slide">
+				       <img src="img/2.jpg">
+				    </li>
+
+				    <li class="slide">
+				       <img src="img/3.jpg">
+				    </li>
+
+				    <li class="slide">
+				       <img src="img/4.jpg">
+				    </li>
+
+				    <li class="slide">
+				       <img src="img/5.jpg">
+				    </li>
+
+				    <li class="slide">
+				       <img src="img/6.jpg">
+				    </li>
+
+				    <li class="slide">
+				       <img src="img/7.jpg">
+				    </li>
+
+				    <li class="slide">
+				       <img src="img/8.jpg">
+				    </li>
+
+				    <li class="slide">
+				       <img src="img/9.jpg">
+				    </li>
+
+				    <li class="slide">
+				       <img src="img/10.jpg">
+				    </li>
+
+				    <li class="slide">
+				       <img src="img/11.jpg">
+				    </li>
+
+				    <li class="slide">
+				       <img src="img/12.jpg">
+				    </li>
+				</ul>
+				<span class="arrow_next" id="next">>>></span>
 			</div>
+				
 			<div class="map">
-				a
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2113.8161044471276!2d56.219507315743556!3d58.00788198121608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43e8c73b35b36cb1%3A0xc893889a02ae2c81!2z0YPQuy4g0JvQtdC90LjQvdCwLCA3MtCQLCDQn9C10YDQvNGMLCDQn9C10YDQvNGB0LrQuNC5INC60YDQsNC5LCA2MTQwNjg!5e0!3m2!1sru!2sru!4v1564894755959!5m2!1sru!2sru" frameborder="0" style="border:0" allowfullscreen></iframe>
 			</div>
-			<footer>
-				a
-			</footer>
 		</main>
+
+		<footer>
+				ПОДВАЛ
+		</footer>
 	</div>
+	<script>
+		var next = document.getElementById('next');
+		var prew = document.getElementById('prew');
+		var slides = document.getElementsByClassName('slide');
+		for(var i=0; i<slides.length; i++) {
+   		slides[i].style.zIndex = slides.length - i;
+}
+
+		next.onclick = function () {
+		    var activeEl = document.querySelector('.active');
+		    if(activeEl.nextElementSibling) {
+		       activeEl.style.left = "-100%";
+		       activeEl.classList.remove('active');
+		       activeEl.nextElementSibling.classList.add('active');
+		       this.classList.remove('no_active');
+		       prew.classList.remove('no_active');
+		       if(!activeEl.nextElementSibling.nextElementSibling) {
+		          this.classList.add('no_active');
+       }
+    }
+}
+		prew.onclick = function () {
+		    var activeEl = document.querySelector('.active');
+		    if(activeEl.previousElementSibling) {
+		       activeEl.previousElementSibling.style.left = "0%";
+		       activeEl.classList.remove('active');
+		       activeEl.previousElementSibling.classList.add('active');
+		       this.classList.remove('no_active');
+		       next.classList.remove('no_active');
+		       if(!activeEl.previousElementSibling.previousElementSibling) {
+		          this.classList.add('no_active');
+       }
+    }
+} 
+	</script>
 </body>
 </html>
