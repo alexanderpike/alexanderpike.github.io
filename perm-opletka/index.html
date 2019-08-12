@@ -39,7 +39,7 @@
 				</div>
 			</div>
 			<div class="sliders">
-				<span class="arrow_prew" id="prew"><<<</span>
+				<img src="img/left.png" alt="left" class="left" id="left">
 				<ul id="slider">
 		   			<li class="slide active">
 			      	<img src="img/1.jpg">
@@ -89,7 +89,7 @@
 				       <img src="img/12.jpg">
 				    </li>
 				</ul>
-				<span class="arrow_next" id="next">>>></span>
+				<img src="img/right.png" alt="right" class="right" id="right">
 			</div>
 				
 			<div class="map">
@@ -98,12 +98,12 @@
 		</main>
 
 		<footer>
-				ПОДВАЛ
+				Автор: Александр Щукин
 		</footer>
 	</div>
 	<script>
-		var next = document.getElementById('next');
-		var prew = document.getElementById('prew');
+		var next = document.getElementById('right');
+		var prew = document.getElementById('left');
 		var slides = document.getElementsByClassName('slide');
 		for(var i=0; i<slides.length; i++) {
    		slides[i].style.zIndex = slides.length - i;
