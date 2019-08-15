@@ -18,7 +18,7 @@
 	margin: 5px 0px 5px 35px;
 }
 
-.city {
+address {
 	font-size: 0.9em;
 	color: black;
 	margin-right: 30px;
@@ -28,7 +28,7 @@
 	padding-bottom: 3px;
 }
 
-.title {
+h1 {
 	color: white;
 	font-size: 2em;
 	font-family: 'Days One', sans-serif;
@@ -87,7 +87,7 @@ main {
 
 .slide {
 	width: 640px;
-	height: 420px;
+	height: 450px;
 	box-shadow: 0 0 5px black;
 }
 
@@ -148,7 +148,7 @@ iframe {
 	height: 100%;
 }
 
-footer {
+.text_footer {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -175,12 +175,12 @@ footer {
 		margin-left: -400px;
 }
 
-	.city {
+	address{
 		font-size: 12px;
 		width: 110px;
 }
 
-	.title {
+	h1 {
 		color: white;
 		font-size: 1.6em;
 		font-family: 'Days One', sans-serif;
@@ -209,7 +209,12 @@ footer {
 
 }
 
-
+@media screen and (max-width: 623px) {
+		address{
+			font-size: 10px;
+			width: 100px;
+}
+}
 
 
 
@@ -227,12 +232,12 @@ footer {
 	.prew {
 		margin-left: -320px;
 }
-	.city {
+	address{
 		font-size: 9px;
 		width: 100px;
 }
 
-	.title {
+	h1 {
 		color: white;
 		font-size: 1.2em;
 		font-family: 'Days One', sans-serif;
@@ -261,7 +266,50 @@ footer {
 
 }
 
+@media screen and (max-width: 411px) {
+		address{
+			font-size: 9px;
+			width: 105px;
+}
+}
 
+@media screen and (max-width: 388px) {
+		address{
+			font-size: 9px;
+			width: 106px;
+}
+}
+
+@media screen and (max-width: 384px) {
+		address{
+			font-size: 9px;
+			width: 107px;
+}
+}
+
+@media screen and (max-width: 380px) {
+		address{
+			font-size: 9px;
+			width: 109px;
+}
+}
+
+@media screen and (min-width: 321px) and (max-width: 379px) {
+		address {
+			font-size: 9px;
+			width: 85px;
+}
+
+		h1 {
+			font-size: 1.1em;
+			text-align: center;
+			width: 100%;
+}
+
+		.logo {
+		display: none;
+}
+}
 
 
 
@@ -284,11 +332,11 @@ footer {
 		display: none;
 	}
 
-	.city {
+	address{
 		display: none;
 }
 
-	.title {
+	h1 {
 		color: white;
 		font-size: 1.2em;
 		font-family: 'Days One', sans-serif;
@@ -306,7 +354,6 @@ footer {
 
 	header {
 		display: flex;
-		/*flex-direction: row;*/
 		width: 100%;
 		min-height: 70px;
 		max-height: 100px;
