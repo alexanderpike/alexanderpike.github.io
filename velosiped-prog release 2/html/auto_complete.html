@@ -5,22 +5,23 @@
     <meta charset="utf-8">
     <title>Программист велосипедист</title>
     <link rel="stylesheet" href="../style/style.css">
-    <link rel="shortcut icon" href="img/iconka.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../style/auto_complete.css">
+    <link rel="shortcut icon" href="../img/iconka.ico" type="image/x-icon">
 </head>
 
 <body>
 	<div id="wrapper">
 		<header>
 			<div class="wrapperImg">
-				<img src="img/pv.png">
+				<img src="../img/pv.png">
 			</div>
 			
 			<div class="link">
 				<nav>
-					<a href="index.html">Главная</a>
-		            <a href="html/state.html">Статьи</a>
-		            <a href="html/video.html">Видео</a>
-		            <a href="html/about.html">О нас</a>
+					<a href="../index.html">Главная</a>
+		            <a href="state.html">Статьи</a>
+		            <a href="video.html">Видео</a>
+		            <a href="about.html">О нас</a>
 				</nav>
 			</div>	
 		</header>
@@ -29,14 +30,32 @@
 			<div class="main">
 				<aside>
 					<a href="#"></a>
-		            <a href="html/time.html">Браузерные часы</a>
-		            <a href="html/metabolism.html">Метаболизм</a>
-		            <a href="html/auto_complete.html">Автозаполнение</a>
+		            <a href="time.html">Браузерные часы</a>
+		            <a href="metabolism.html">Метаболизм</a>
+		            <a href="auto_complete.html">Автозаполнение</a>
 				</aside>
 			</div>
 
 			<div class="content">
-				
+				<div class="auto_text">
+					<div class="textinput">
+						<input id="name" type="text" name="names" placeholder="Введите ваше имя">
+						<input id="age"type="text" name="ages" placeholder="Введите ваш возраст">
+						<input id="work"type="text" name="works"  placeholder="Кем вы работает">
+					</div>
+					<div class="textout">
+						Привет, меня зовут <mark><span id="nameout">_____</span></mark>, 
+						мне <mark><span id="ageout">_____</span></mark> лет 
+						и я работаю <mark><span id="workout">_____</span></mark>.
+					</div>
+				</div>
+				 <script type="text/javascript">
+				 	setInterval(function() {
+				 		document.getElementById("nameout").innerHTML = document.getElementById("name").value;
+						document.getElementById("ageout").innerHTML = document.getElementById("age").value;
+						document.getElementById("workout").innerHTML = document.getElementById("work").value;
+				 	} , 1000);
+				 </script>
 			</div>
 		</div>
 	</div>

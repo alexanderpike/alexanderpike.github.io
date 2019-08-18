@@ -1,0 +1,205 @@
+* {
+  margin: 0;
+  padding: 0;
+  transition: all .4s ease;
+}
+a {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+nav {
+  width: 30%;
+}
+
+.header_link {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: white;
+  margin-left: 3%;
+}
+
+.header_link:hover {
+  color: #fce38a;
+  border-bottom: 2px solid #fce38a;
+  padding-bottom: 5px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  max-width: 1920px;
+  max-height: 10000px;
+  margin: 0 auto;
+}
+
+.logo {
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: 700;
+
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 1920px;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+
+.welcome_to_mogo {
+  width: 100%;
+  max-width: 1920px;
+  max-height: 1000px;
+  background-image: url(../img/background.png);
+  background-repeat: no-repeat;
+  background-origin: padding-box;
+  background-position: center;
+}
+
+.center_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.creative_template {
+  color: #ffffff;
+  font-size: 72px;
+  font-weight: 400;
+  margin-top: 179px;
+  font-family: 'Kaushan Script', cursive;
+}
+
+.welcome {
+  color: #ffffff;
+  font-size: 150px;
+  font-weight: 700;
+  line-height: 140px;
+  text-transform: uppercase;
+  margin-top: 42px;
+  width: 900px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.btn_one {
+  border-top-width: 10px;
+  border: 3px solid #ffffff;
+  margin-top: 124px;
+}
+
+.btn_one:hover {
+  cursor: pointer;
+  border: 3px solid yellow;
+}
+
+input.btn_one {
+  height: 40px;
+  width: 160px;
+  background-color: rgba(0,0,0,0);
+  color: white;
+}
+
+input[name="learn_more"] {
+  font-size: 18px;
+}
+
+.welcome_podval {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%; 
+  max-height: 90px;
+  color: white;
+  font-size: 18px;
+  padding-bottom: 30px;
+  margin-top: 60px;
+}
+
+.number {
+  font-size: 22px;
+  color: white;
+}
+
+.intro, .work, .about, .contacts {
+  border-top: 3px solid white;
+  padding-top: 10px;
+}
+
+.what_we_do {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1920px;
+}
+
+.what {
+  margin-top: 91px;
+  color: #333333;
+  font-family: "Kaushan Script";
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.story {
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 23px;
+}
+
+.lorem_one {
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-top: 90px;
+  width: 50%;
+  margin-bottom: 100px;
+}
+
+.three_img {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 1920px;
+  align-items: center;
+  margin-bottom: 120px;
+}
+
+.width_line {
+  width: 100%;
+  max-width: 1920px;
+  background-color: #95e1d3;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 270px;
+  color: white;
+}
+
+.a42, .a123, .a15, .a99, .a24 {
+  font-family: Montserrat;
+  font-size: 72px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
