@@ -1,218 +1,147 @@
 * {
   margin: 0;
   padding: 0;
-  transition: all .4s ease;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
 }
 
 body {
-	background-color: black;
-}
-a {
-  text-decoration: none;
-}
-
-li {
-  list-style-type: none;
-  display: inline;
-  margin-left: 3%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  color: #333;
+  line-height: 1.5;
 }
 
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+.container {
   width: 100%;
-  max-width: 1920px;
-  max-height: 10000px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
-.header_link {
-  font-family: Montserrat;
-  font-size: 14px;
-  font-weight: 400;
-  text-transform: uppercase;
-  color: white;
-  margin-left: 3%;
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background: url("../img/background.png") center no-repeat;
+  background-size: cover;
 }
 
-.cart {
-  margin-left: 4%;
+.header {
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  z-index: 1000;
 }
 
-.header_link:hover {
-  color: #fce38a;
-  border-bottom: 2px solid #fce38a;
-  padding-bottom: 5px;
+.header_inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
-  color: #ffffff;
-  font-family: Montserrat;
-  font-size: 30px;
+  font-size: 38px;
   font-weight: 700;
+  color: #fff;
 }
 
-header {
-  display: flex;
-  flex-direction: row;
+.nav {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.nav_link {
+  color: #fff;
+  text-decoration: none;
+  transition: all .3s ease;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 15px;
+  position: relative;
+
+}
+
+.nav_link:after {
+  content: "";
+  display: block;
   width: 100%;
-  max-width: 1920px;
-  align-items: center;
-  justify-content: space-around;
-  margin-top: 40px;
+  height: 3px;
+  background-color: #fff;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  opacity: 0;
+  transition: all .3s ease;
 }
 
-ul {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: space-around;
+.nav_link:hover {
+  color: #fce38a;
 }
 
-.welcome_to_mogo {
+.nav_link:hover:after {
+  opacity: 1;
+  background-color: #fce38a;
+}
+
+.intro_title {
+  font-size: 150px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  line-height: 1;
+}
+
+.intro_title:after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #fff;
+  margin: 60px auto 60px;
+}
+
+.intro_inner {
   width: 100%;
-  max-width: 1920px;
-  max-height: 1000px;
-  background-image: url(../img/background.png);
-  background-repeat: no-repeat;
-  background-origin: padding-box;
-  background-position: center;
+  max-width: 880px;
+  margin: 0 auto;
+  text-align: center;
 }
 
-.center_content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.creative_template {
-  color: #ffffff;
+.intro_suptitle {
+  margin-bottom: 20px;
   font-size: 72px;
-  font-weight: 400;
-  margin-top: 179px;
+  color: #fff;
   font-family: 'Kaushan Script', cursive;
 }
 
-.welcome {
-  text-align: center;
-  color: #ffffff;
-  font-size: 120px;
-  font-weight: 700;
-  line-height: 140px;
+.btn {
+  display: inline-block;
+  vertical-align: top;
+  padding: 10px 15px;
+  border: 3px solid #fff;
+  color: #fff;
   text-transform: uppercase;
-  margin-top: 42px;
-  width: 900px;
-  font-family: 'Montserrat', sans-serif;
-}
-
-.btn_one {
-  border-top-width: 10px;
-  border: 3px solid #ffffff;
-  margin-top: 120px;
-}
-
-.btn_one:hover {
-  cursor: pointer;
-  border: 3px solid yellow;
-  color: yellow;
-}
-
-input.btn_one {
-  height: 60px;
-  width: 195px;
-  background-color: rgba(0,0,0,0);
-  color: white;
-}
-
-input[name="learn_more"] {
-  font-size: 18px;
-}
-
-.welcome_podval {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%; 
-  height: auto; 
-  color: white;
-  font-size: 18px;
-  margin: 60px 0px 20px 0px;
-}
-
-.number {
-  font-size: 22px;
-  color: white;
-}
-
-.intro, .work, .about, .contacts {
-  border-top: 3px solid white;
-  padding-top: 10px;
-}
-
-.what_we_do {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  max-width: 1920px;
-  background-color: white;
-}
-
-.what {
-  margin-top: 91px;
-  color: #333333;
-  font-family: "Kaushan Script";
-  font-size: 26px;
-  font-weight: 400;
-}
-
-.story {
-  font-family: Montserrat;
-  font-size: 30px;
+  font-size: 14px;
   font-weight: 700;
-  text-transform: uppercase;
-  margin-top: 23px;
+  text-decoration: none;
+  transition: all .3s ease;
+  margin-bottom: 60px;
 }
 
-.lorem_one {
-  font-family: Roboto;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 24px;
-  margin-top: 90px;
-  width: 50%;
-  margin-bottom: 100px;
-}
-
-.three_img {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  width: 100%;
-  max-width: 1920px;
-  align-items: center;
-  margin-bottom: 120px;
-}
-
-.width_line {
-  width: 100%;
-  max-width: 1920px;
-  background-color: #95e1d3;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  height: 270px;
-  color: white;
-}
-
-.number_line {
-  font-family: Montserrat;
-  font-size: 72px;
-  font-weight: 700;
-  text-transform: uppercase;
+.btn:hover {
+  background-color: #fff;
+  color: #000;
 }
