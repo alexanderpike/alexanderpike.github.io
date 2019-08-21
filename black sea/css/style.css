@@ -16,7 +16,6 @@ a {
 
 .wrapper {
 	width: 100%;
-	max-width: 1390px;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
@@ -280,6 +279,7 @@ textarea[placeholder="Message"] {
 
 textarea[placeholder="Message"] {
 	padding-top: 5px;
+	resize: none;
 }
 
 input[name="name"]:focus,
